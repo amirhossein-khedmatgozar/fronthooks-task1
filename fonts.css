@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "vaziri-Regular";
+  src: url(./font/Vazirmatn-FD-Regular.woff2) format(woff2);
+}
+@font-face {
+  font-family: "vazari-Bold";
+  src: url(./font/Vazirmatn-FD-Bold.woff2) format(woff2);
+}
+@font-face {
+  font-family: "extra";
+  src: url(./font/Vazirmatn-ExtraBold.woff2) format(woff2);
+}
+body {
+  font-family: "vaziri-Regular";
+  direction: rtl;
+}
+h1,
+h2 {
+  font-family: "vaziri-Regular";
+}

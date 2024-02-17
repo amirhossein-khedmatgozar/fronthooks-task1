@@ -1,0 +1,135 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+:root {
+  --color-buttom: #219f95;
+  --color-texts: #696969;
+  --color-dark: #1e1e1e;
+  --color-white: #ffffff;
+  --color-icon: #afcedd;
+  --color-blue-dark: #234894;
+  --font-text: 1.07rem;
+}
+.button-footer {
+  color: var(--color-white);
+  background-color: var(--color-buttom);
+  width: 150px;
+  height: 64px;
+  border-radius: 8px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.header__head {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header--display {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header--display .header__number {
+  background-color: var(--color-blue-dark);
+  font-weight: 900;
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  color: var(--color-blue-dark);
+  background-color: var(--color-icon);
+  font-family: "vazari-Bold";
+  font-size: 2.2rem;
+  text-align: center;
+  border-radius: 6px;
+  padding-top: 0.3rem;
+}
+.header--display .header__text {
+  color: var(--color-blue-dark);
+  font-weight: 600;
+  font-size: 1.6rem;
+  font-family: "vazari-Bold";
+}
+.header--display .header__date {
+  color: var(--color-texts);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.main--display {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+}
+.main--display .main__request {
+  color: var(--color-dark);
+  font-family: "extra";
+  font-weight: 900;
+  font-size: 1.8rem;
+}
+
+.main--display .main__number {
+  color: var(--color-texts);
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 0.2rem;
+}
+.footer-first--display {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-first--display .footer__img {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+}
+.footer-first--display .footer-first__text {
+  font-family: "extra";
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding-right: 0.75rem;
+}
+
+.bottom-footer--display {
+  display: flex;
+  justify-content: space-between;
+}
+.Classification--display {
+  display: grid;
+
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media screen and (min-width: 640px) {
+  .Classification--display {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .Classification--display {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+.tittle {
+  font-size: 2.2rem;
+  font-family: "extra";
+  font-weight: 900;
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  padding: 1.5rem;
+}
